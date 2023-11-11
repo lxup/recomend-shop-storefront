@@ -2,6 +2,119 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    /* COLORS */
+    --accent-1: #FFE974;
+    --accent-1-foreground: #000;
+    --accent-1-hover: 44, 97%, 40%;
+
+    --like: #f788d2;
+    --like-foreground: #000000;
+    --like-hover: #f32fb2;
+
+    --background: #101010;
+    --background-border: #000000;
+    --foreground: 0 100% 100%;
+
+    --muted: #1f1f1f;
+    --muted-hover: #141414;
+    --muted-foreground: #929292;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+
+    --primary: 0 100% 100%;
+    --primary-subued: 0 0% 65%;
+    --primary-foreground: 240 5.9% 10%;
+
+    --secondary: #0e0e0e;
+    --secondary-foreground: #fff;
+
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: ;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 85.7% 97.3%;
+
+    --ring: 240 3.7% 15.9%;
+
+    --radius: 0.5rem;
+
+    /* NAVBAR */
+    --navbar-background-color: #000000;
+
+    /* SCROLLBAR */
+    --scrollbar: #858585;
+    --scrollbar-hover: #383838;
+
+    /* HEIGHT */
+    --height-header: 64px;
+    --height-navbar: 80px;
+  }
+
+  .light {
+    /* COLORS */
+    --accent-1: #FFE974;
+    --accent-1-foreground: #000;
+    --accent-1-hover: 44, 97%, 40%;
+
+    --like: #f788d2;
+    --like-foreground: #000000;
+    --like-hover: #f32fb2;
+
+    --background: #c41919;
+    --background-border: #b1b1b1;
+    --foreground: 0 100% 100%;
+
+    --muted: #0e0e0e;
+    --muted-foreground: #929292;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+
+    --primary: 0 100% 100%;
+    --primary-subued: 0 0% 65%;
+    --primary-foreground: 240 5.9% 10%;
+
+    --secondary: #0e0e0e;
+    --secondary-foreground: #fff;
+
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: ;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 85.7% 97.3%;
+
+    --ring: 240 3.7% 15.9%;
+
+    --radius: 0.5rem;
+
+    /* NAVBAR */
+    --navbar-background-color: #000000;
+
+    /* SCROLLBAR */
+    --scrollbar: #858585;
+    --scrollbar-hover: #383838;
+
+    /* HEIGHT */
+    --height-header: 64px;
+    --height-navbar: 70px;
+  }
+}
+
 @layer utilities {
   /* Chrome, Safari and Opera */
   .no-scrollbar::-webkit-scrollbar {

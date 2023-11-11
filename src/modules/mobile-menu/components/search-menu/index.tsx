@@ -14,10 +14,10 @@ const SearchMenu = () => {
   return (
     <InstantSearch searchClient={searchClient} indexName={SEARCH_INDEX_NAME}>
       <div className="flex flex-col flex-1">
-        <div className="flex items-center justify-between w-full border-b border-gray-200 py-4 px-6">
+        <div className="flex items-center justify-between w-full border-b-2 border-muted py-4 px-6">
           <div className="flex-1 basis-0">
             <div className="flex items-center gap-x-2">
-              <Search className="text-gray-500" size={20} />
+              <Search className="text-muted-foreground" size={20} />
               <SearchBox />
             </div>
           </div>

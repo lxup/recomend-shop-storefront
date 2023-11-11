@@ -13,7 +13,7 @@ const ProductPreview = ({
     <Link href={`/products/${handle}`}>
       <div>
         <Thumbnail thumbnail={thumbnail} size="full" />
-        <div className="text-base-regular mt-2">
+        <div className=" text-base-regular mt-2">
           <span>{title}</span>
           <div className="flex items-center gap-x-2 mt-1">
             {price ? (
@@ -32,7 +32,7 @@ const ProductPreview = ({
                 </span>
               </>
             ) : (
-              <div className="w-20 h-6 animate-pulse bg-gray-100"></div>
+              <div className="w-20 h-6 animate-pulse bg-background"></div>
             )}
           </div>
         </div>

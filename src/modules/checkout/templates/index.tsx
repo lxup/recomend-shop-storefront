@@ -5,6 +5,8 @@ import Link from "next/link"
 import CheckoutLoader from "../components/checkout-loader"
 import CheckoutForm from "./checkout-form"
 import CheckoutSummary from "./checkout-summary"
+import Image from "next/image"
+import { siteConfig } from "../../../../config/site"
 
 const CheckoutTemplate = () => {
   return (
@@ -25,7 +27,13 @@ const CheckoutTemplate = () => {
               </>
             </Link>
             <Link href="/" className="text-xl-semi">
-              ACME
+              <Image
+                src={siteConfig.logo.href}
+                alt={siteConfig.logo.alt}
+                width={200}
+                height={200}
+                priority
+                />
             </Link>
             <div className="flex-1 basis-0" />
           </nav>

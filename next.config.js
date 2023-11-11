@@ -11,6 +11,10 @@ module.exports = withStoreConfig({
   features: store.features,
   reactStrictMode: true,
   images: {
+    domains: [
+      "localhost",
+      "s3.recomend.app",
+    ],
     remotePatterns: [
       {
         protocol: "http",

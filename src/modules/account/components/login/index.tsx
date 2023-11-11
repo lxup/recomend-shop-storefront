@@ -46,7 +46,7 @@ const Login = () => {
         </div>
       )}
       <h1 className="text-large-semi uppercase mb-6">Welcome back</h1>
-      <p className="text-center text-base-regular text-gray-700 mb-8">
+      <p className="text-center text-base-regular text-muted-foreground mb-8">
         Sign in to access an enhanced shopping experience.
       </p>
       <form className="w-full" onSubmit={onSubmit}>
@@ -74,7 +74,7 @@ const Login = () => {
         )}
         <Button className="mt-6">Enter</Button>
       </form>
-      <span className="text-center text-gray-700 text-small-regular mt-6">
+      <span className="text-center text-muted-foreground text-small-regular mt-6">
         Not a member?{" "}
         <button
           onClick={() => setCurrentView(LOGIN_VIEW.REGISTER)}

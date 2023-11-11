@@ -21,7 +21,7 @@ const CountryMenu = () => {
 
   return (
     <div className="flex flex-col flex-1">
-      <div className="flex items-center justify-between w-full border-b border-gray-200 py-4 px-6">
+      <div className="flex items-center justify-between w-full border-b-2 border-muted-foreground py-4 px-6">
         <div className="flex-1 basis-0">
           <button
             className="flex items-center gap-x-2"
@@ -45,7 +45,7 @@ const CountryMenu = () => {
           {countryOptions?.map((option) => (
             <li key={option.country}>
               <button
-                className="px-8 py-4 flex items-center justify-between w-full border-b border-gray-200"
+                className="px-8 py-4 flex items-center justify-between w-full border-b-2 border-muted-foreground"
                 onClick={() =>
                   handleSelectCountry(option.region, option.country)
                 }

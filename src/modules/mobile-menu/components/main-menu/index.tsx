@@ -5,8 +5,10 @@ import ChevronDown from "@modules/common/icons/chevron-down"
 import Search from "@modules/common/icons/search"
 import X from "@modules/common/icons/x"
 import { useCollections, useMeCustomer } from "medusa-react"
+import Image from "next/image"
 import Link from "next/link"
 import ReactCountryFlag from "react-country-flag"
+import { siteConfig } from "../../../../../config/site"
 
 const MainMenu = () => {
   const { collections } = useCollections()
@@ -25,7 +27,7 @@ const MainMenu = () => {
 
   return (
     <div className="flex flex-col flex-1">
-      <div className="flex items-center justify-between w-full border-b border-gray-200 py-4 px-6">
+      <div className="flex items-center justify-between w-full py-4 px-6">
         <div className="flex-1 basis-0">
           <button
             className="flex items-center gap-x-2"
@@ -36,7 +38,13 @@ const MainMenu = () => {
           </button>
         </div>
         <div>
-          <h1 className="text-xl-semi uppercase">Acme</h1>
+          <Image
+            src={siteConfig.logo.href}
+            alt={siteConfig.logo.alt}
+            width={200}
+            height={200}
+            priority
+          />
         </div>
         <div className="flex-1 basis-0 flex justify-end">
           <button onClick={close}>
@@ -48,7 +56,7 @@ const MainMenu = () => {
       <div className="space-y-6 flex-1 flex flex-col justify-between p-6">
         {process.env.FEATURE_SEARCH_ENABLED && (
           <button
-            className="bg-gray-50 flex items-center px-4 py-2 gap-x-2 text-gray-500"
+            className="bg-muted rounded-md flex items-center px-4 py-2 gap-x-2 text-muted-foreground"
             onClick={setScreenSearch}
           >
             <Search size={24} />
@@ -58,9 +66,9 @@ const MainMenu = () => {
           </button>
         )}
 
-        <div className="flex flex-col flex-1 text-large-regular text-gray-900">
+        <div className="flex flex-col flex-1 text-large-regular">
           <ul className="flex flex-col gap-y-2">
-            <li className="bg-gray-50 p-4">
+            <li className="p-4">
               <Link href="/store">
                 <button
                   className="flex items-center justify-between w-full"
@@ -75,7 +83,7 @@ const MainMenu = () => {
             {collections ? (
               <>
                 {collections.map((collection) => (
-                  <li key={collection.id} className="bg-gray-50 p-4">
+                  <li key={collection.id} className=" p-4">
                     <Link href={`/collections/${collection.handle}`}>
                       <button
                         className="flex items-center justify-between w-full"
@@ -113,7 +121,7 @@ const MainMenu = () => {
               </div>
             ) : (
               <div className="flex flex-col gap-y-4">
-                <span className="text-gray-700 uppercase">Signed in as</span>
+                <span className="text-muted-foreground uppercase">Signed in as</span>
                 <Link href={`/account`} passHref>
                   <button
                     className="flex items-center justify-between border-b border-gray-200 py-2 w-full"
@@ -127,7 +135,7 @@ const MainMenu = () => {
               </div>
             )}
             <div className="flex flex-col gap-y-4">
-              <span className="text-gray-700 uppercase">Delivery</span>
+              <span className="text-muted-foreground uppercase">Delivery</span>
               <button
                 className="flex items-center justify-between border-b border-gray-200 py-2"
                 onClick={setScreenCountry}
