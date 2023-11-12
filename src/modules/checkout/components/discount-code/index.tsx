@@ -89,7 +89,7 @@ const DiscountCode: React.FC<DiscountCodeProps> = ({ cart }) => {
   }
 
   return (
-    <div className="w-full bg-white flex flex-col">
+    <div className="w-full bg-background flex flex-col">
       <div className="mb-4">
         <h3 className="text-base-semi">Discount</h3>
       </div>

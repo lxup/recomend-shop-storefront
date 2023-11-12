@@ -69,7 +69,7 @@ const Overview = ({ orders, customer }: OverviewProps) => {
       <div className="hidden small:block">
         <div className="text-xl-semi flex justify-between items-start mb-4">
           <span>Hello {customer?.first_name}</span>
-          <span className="text-small-regular text-gray-700">
+          <span className="text-small-regular">
             Signed in as:{" "}
             <span className="font-semibold">{customer?.email}</span>
           </span>
@@ -83,7 +83,7 @@ const Overview = ({ orders, customer }: OverviewProps) => {
                   <span className="text-3xl-semi leading-none">
                     {getProfileCompletion(customer)}%
                   </span>
-                  <span className="uppercase text-base-regular text-gray-500">
+                  <span className="uppercase text-base-regular text-muted-foreground">
                     Completed
                   </span>
                 </div>
@@ -95,7 +95,7 @@ const Overview = ({ orders, customer }: OverviewProps) => {
                   <span className="text-3xl-semi leading-none">
                     {customer?.shipping_addresses?.length || 0}
                   </span>
-                  <span className="uppercase text-base-regular text-gray-500">
+                  <span className="uppercase text-base-regular text-muted-foreground">
                     Saved
                   </span>
                 </div>

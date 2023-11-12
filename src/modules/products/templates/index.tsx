@@ -27,6 +27,7 @@ const ProductTemplate: React.FC<ProductTemplateProps> = ({ product }) => {
     setIsOnboarding(onboarding === "true")
   }, [])
 
+  console.log(product)
   return (
     <ProductProvider product={product}>
       <div className="content-container flex flex-col small:flex-row small:items-start py-6 relative">

@@ -58,7 +58,7 @@ const Item = ({ item, region }: ItemProps) => {
         <div className="flex items-end justify-between text-small-regular flex-1">
           <div>
             <button
-              className="flex items-center gap-x-1 text-gray-500"
+              className="flex items-center gap-x-1"
               onClick={() => deleteItem(item.id)}
             >
               <Trash size={14} />

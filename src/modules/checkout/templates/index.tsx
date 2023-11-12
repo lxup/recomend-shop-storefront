@@ -11,12 +11,12 @@ import { siteConfig } from "../../../../config/site"
 const CheckoutTemplate = () => {
   return (
     <CheckoutProvider>
-      <div className="bg-gray-100 relative small:min-h-screen">
-        <div className="h-16 bg-white">
+      <div className="bg-background-border relative small:min-h-screen">
+        <div className="h-16 bg-background">
           <nav className="flex items-center h-full justify-between content-container">
             <Link
               href="/cart"
-              className="text-small-semi text-gray-700 flex items-center gap-x-2 uppercase flex-1 basis-0"
+              className="text-small-semi flex items-center gap-x-2 uppercase flex-1 basis-0"
             >
               <>
                 <ChevronDown className="rotate-90" size={16} />
@@ -45,9 +45,9 @@ const CheckoutTemplate = () => {
             <CheckoutSummary />
           </div>
         </div>
-        <div className="py-4 w-full flex items-center justify-center">
+        {/* <div className="py-4 w-full flex items-center justify-center">
           <MedusaCTA />
-        </div>
+        </div> */}
       </div>
     </CheckoutProvider>
   )

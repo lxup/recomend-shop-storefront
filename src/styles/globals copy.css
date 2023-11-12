@@ -223,13 +223,3 @@
     @apply text-[36px] leading-[48px] font-semibold;
   }
 }
-
- 
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-}

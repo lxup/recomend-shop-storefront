@@ -49,7 +49,7 @@ const CardNumber = ({
 }) => {
   return (
     <div className="border-b border-gray-200 py-2 relative">
-      <span className="absolute -top-6 text-gray-700 text-base-regular">
+      <span className="absolute -top-6 text-muted-foreground text-base-regular">
         Card number
       </span>
       <CardNumberElement options={options} />
@@ -64,7 +64,7 @@ const CardExpiry = ({
 }) => {
   return (
     <div className="border-b border-gray-200 w-full py-2 relative">
-      <span className="absolute -top-6 text-gray-700 text-base-regular">
+      <span className="absolute -top-6 text-muted-foreground text-base-regular">
         Expiration date
       </span>
       <CardExpiryElement options={options} />
@@ -75,7 +75,7 @@ const CardExpiry = ({
 const CardCVC = ({ options }: { options: StripeCardCvcElementOptions }) => {
   return (
     <div className="border-b border-gray-200 w-full py-2 relative">
-      <span className="absolute -top-6 text-gray-700 text-base-regular">
+      <span className="absolute -top-6 text-muted-foreground text-base-regular">
         CVC
       </span>
       <CardCvcElement options={{ ...options, placeholder: "123" }} />

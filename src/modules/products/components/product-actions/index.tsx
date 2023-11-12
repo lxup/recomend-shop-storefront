@@ -29,7 +29,7 @@ const ProductActions: React.FC<ProductActionsProps> = ({ product }) => {
       {product.collection && (
         <Link
           href={`/collections/${product.collection.handle}`}
-          className="text-small-regular text-gray-700"
+          className="text-small-regular"
         >
           {product.collection.title}
         </Link>
@@ -57,7 +57,7 @@ const ProductActions: React.FC<ProductActionsProps> = ({ product }) => {
 
       <div className="mb-4">
         {selectedPrice ? (
-          <div className="flex flex-col text-gray-700">
+          <div className="flex flex-col">
             <span
               className={clsx("text-xl-semi", {
                 "text-rose-600": selectedPrice.price_type === "sale",
