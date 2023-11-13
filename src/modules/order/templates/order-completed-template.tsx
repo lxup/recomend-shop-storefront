@@ -24,10 +24,10 @@ const OrderCompletedTemplate: React.FC<OrderCompletedTemplateProps> = ({
   }, [])
 
   return (
-    <div className="bg-gray-50 py-6 min-h-[calc(100vh-64px)]">
+    <div className="bg-background py-6 min-h-[calc(100vh-64px)]">
       <div className="content-container flex flex-col justify-center items-center">
         {isOnboarding && <OnboardingCta orderId={order.id} />}
-        <div className="max-w-4xl h-full bg-white w-full">
+        <div className="max-w-4xl h-full bg-muted w-full">
           <OrderDetails order={order} />
           <Items
             items={order.items}

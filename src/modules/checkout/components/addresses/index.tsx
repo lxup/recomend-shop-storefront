@@ -80,7 +80,7 @@ const Addresses = () => {
                     </div>
                     {checked && (
                       <div className="flex items-center gap-x-2 mt-6">
-                        <div className="flex items-center justify-center border border-gray-700 bg-gray-100 w-4 h-4">
+                        <div className="flex items-center justify-center border border-accent-1 rounded-full text-accent-1 bg-background w-4 h-4">
                           ✓
                         </div>
                         <span>Same as billing address</span>

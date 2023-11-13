@@ -19,10 +19,10 @@ const PaymentStripe: React.FC = () => {
       style: {
         base: {
           fontFamily: "Inter, sans-serif",
-          color: "#424270",
+          color: "#FFE974",
           padding: "10px 12px",
           "::placeholder": {
-            color: "#CFD7E0",
+            color: "#929292",
           },
         },
       },

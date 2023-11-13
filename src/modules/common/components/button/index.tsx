@@ -22,7 +22,7 @@ const Button = ({
         {
           "text-background bg-accent-1 hover:bg-background hover:text-accent-1 disabled:hover:bg-gray-900 disabled:hover:text-white":
             variant === "primary",
-          "text-gray-900 bg-transparent border-gray-920 hover:bg-gray-100":
+          "text-background bg-white border-gray-920 hover:bg-background hover:text-white":
             variant === "secondary",
         },
         className

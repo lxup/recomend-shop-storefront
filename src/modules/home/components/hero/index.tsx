@@ -16,8 +16,8 @@ const Hero = () => {
           comes your way.
         </p> */}
         <Button variant={'accent-1'} asChild>
-          <Link href={'/store'}>
-            Explore products
+          <Link href={'/products/paradise-pictures'}>
+            Buy it
           </Link>
         </Button>
       </div>

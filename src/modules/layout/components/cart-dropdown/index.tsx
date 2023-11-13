@@ -7,6 +7,7 @@ import LineItemOptions from "@modules/common/components/line-item-options"
 import LineItemPrice from "@modules/common/components/line-item-price"
 import Trash from "@modules/common/icons/trash"
 import Thumbnail from "@modules/products/components/thumbnail"
+import { ShoppingBag } from "lucide-react"
 import { formatAmount, useCart } from "medusa-react"
 import Link from "next/link"
 import { Fragment } from "react"
@@ -21,7 +22,14 @@ const CartDropdown = () => {
     <div className="h-full z-50" onMouseEnter={open} onMouseLeave={close}>
       <Popover className="relative h-full">
         <Popover.Button className="h-full">
-          <Link href="/cart">{`My Bag (${totalItems})`}</Link>
+          <Link href="/cart" className=" flex gap-2 items-center">
+            <ShoppingBag />
+            <span>{totalItems}</span>
+            <span className="sr-only">
+              {`My Bag (${totalItems})`}
+            </span>
+          
+          </Link>
         </Popover.Button>
         <Transition
           show={state}

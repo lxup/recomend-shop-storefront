@@ -12,6 +12,7 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useEffect, useState } from "react"
 import { siteConfig } from "../../../../../config/site"
+import { User } from "lucide-react"
 
 const Nav = () => {
   const pathname = usePathname()
@@ -89,7 +90,10 @@ const Nav = () => {
           <div className="flex items-center gap-x-6 h-full flex-1 basis-0 justify-end">
             <div className="hidden small:flex items-center gap-x-6 h-full">
               {process.env.FEATURE_SEARCH_ENABLED && <DesktopSearchModal />}
-              <Link href="/account">Account</Link>
+              <Link href="/account" className="flex gap-é items-center">
+                <User />
+                <span className="sr-only">Account</span>
+              </Link>
             </div>
             <CartDropdown />
           </div>

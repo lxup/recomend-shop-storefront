@@ -8,6 +8,7 @@ import ProductPreview from "@modules/products/components/product-preview"
 import SkeletonProductPreview from "@modules/skeletons/components/skeleton-product-preview"
 import clsx from "clsx"
 import { chunk } from "lodash"
+import { Store } from "lucide-react"
 import Link from "next/link"
 import { useRouter } from "next/navigation"
 import React, { useState } from "react"
@@ -36,7 +37,8 @@ const DropdownMenu = () => {
                 )}
                 onClick={() => push("/store")}
               >
-                Store
+                <Store />
+                <span className="sr-only">Store</span>
               </Popover.Button>
             </Link>
 
