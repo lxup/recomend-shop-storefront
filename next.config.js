@@ -11,10 +11,6 @@ module.exports = withStoreConfig({
   features: store.features,
   reactStrictMode: true,
   images: {
-    domains: [
-      "localhost",
-      "s3.recomend.app",
-    ],
     remotePatterns: [
       {
         protocol: "http",
@@ -22,11 +18,7 @@ module.exports = withStoreConfig({
       },
       {
         protocol: "https",
-        hostname: "medusa-public-images.s3.eu-west-1.amazonaws.com",
-      },
-      {
-        protocol: "https",
-        hostname: "medusa-server-testing.s3.amazonaws.com",
+        hostname: "s3.recomend.app",
       },
     ],
   },
